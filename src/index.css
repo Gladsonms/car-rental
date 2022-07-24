@@ -1,3 +1,9 @@
+/* talwind config css */
+
+@tailwind base;
+@tailwind components;
+@tilwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
