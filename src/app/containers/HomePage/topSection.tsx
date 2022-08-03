@@ -67,41 +67,41 @@ text-gray-800
 `}
 `
 
-const BlobContainer = styled.div`
-width:20em;
-height:10em;
-position:absolute;
-top-9em;
-z-index:-1;
-transform:rotate(-30deg);
-
+const BlobContainer =styled.div`
+width: 20em;
+height: 10em;
+position: absolute;
+right: -5em;
+top: -9em;
+z-index: -1;
+transform: rotate(-30deg);
 img {
-    width:100%
-    height:auto
-    max-height:max-content;
+  width: 100%;
+  height: auto;
+  max-height: max-content;
 }
-@media(min-width:${SCREENS.sm}){
-    width:40em;
-    max-height:10em;
-    right:-9em
-    top-16em;
-    transform:rotate(-25deg);
+@media (min-width: ${SCREENS.sm}) {
+  width: 40em;
+  max-height: 10em;
+  right: -9em;
+  top: -16em;
+  transform: rotate(-25deg);
 }
-@media(min-width:${SCREENS.lg}){
-    width:50em;
-    max-height:30em;
-    right:-7em
-    top-15em;
-    transform:rotate(-25deg);
+@media (min-width: ${SCREENS.lg}) {
+  width: 50em;
+  max-height: 30em;
+  right: -7em;
+  top: -15em;
+  transform: rotate(-30deg);
 }
-@media(min-width:${SCREENS.xl}){
-    width:70em;
-    max-height:30em;
-    right:-15em
-    top-25em;
-    transform:rotate(-20deg);
+@media (min-width: ${SCREENS.xl}) {
+  width: 70em;
+  max-height: 30em;
+  right: -15em;
+  top: -25em;
+  transform: rotate(-20deg);
 }
-`
+`;
 const StandaloneCar= styled.div`
 width:auto;
 height:10em;
@@ -129,6 +129,14 @@ img{
     top-6em;
 }
 `
+const ButtonContainer = styled.div`
+${tw`
+flex
+mt-4
+flex-wrap
+`
+}
+`
 export function TopSection(){
     return <TopSectionContainer>
     <LeftContainer>
@@ -138,8 +146,10 @@ export function TopSection(){
         <Description>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam cupiditate, minus commodi officiis aperiam. Pariatur at sed sapiente, rem magni consectetur nesciunt? Hic voluptatibus nam molestiae, odio culpa quasi.
         </Description>
+        <ButtonContainer>
         <Button text="Book your Ride"/>
         <Button theme="filled" text="Sell Your car"/>
+        </ButtonContainer>
     </LeftContainer>
     <RightContainer>
         <BlobContainer>
