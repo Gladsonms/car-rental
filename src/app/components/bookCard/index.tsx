@@ -73,21 +73,25 @@ const LineSeperator = styled.span`
   `};
 `;
 export function BookCard() {
-    return (
-        <CardContainer>
-            <ItemContainer>
-                <Icon> <FontAwesomeIcon icon={faCalendarAlt} /></Icon>
-                <Name>Pick up Date</Name>
-            </ItemContainer>
-            <LineSeperator>
-                <ItemContainer>
-                    <Icon>
-                        <FontAwesomeIcon icon={faCalendarAlt}/>
-                    </Icon>
-                    <Name>Return Date</Name>
-                </ItemContainer>
-            </LineSeperator>
-            <Marginer direction="horizontal" margin="4em"/>
-            <Button text="Book your Ride"/>
-        </CardContainer>)
+  return (
+    <CardContainer>
+      <ItemContainer>
+        <Icon>
+          {" "}
+          <FontAwesomeIcon icon={faCalendarAlt} />
+        </Icon>
+        <Name>Pick up Date</Name>
+      </ItemContainer>
+      <LineSeperator>
+        <ItemContainer>
+          <Icon>
+            <FontAwesomeIcon icon={faCalendarAlt} />
+          </Icon>
+          <Name>Return Date</Name>
+        </ItemContainer>
+      </LineSeperator>
+      <Marginer direction="horizontal" margin="4em" />
+      <Button text="Book your Ride" />
+    </CardContainer>
+  );
 }
