@@ -2,22 +2,22 @@ import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 
-import carLogoImage from "../../../assets/images/car-logo.png"
+import carLogoImage from "../../../assets/images/car-logo.png";
 
 const LogoContainer = styled.div`
 ${tw`
 flex
 items-center
-`}`
+`}`;
 const LogoText = styled.div`
 ${
-tw`
+  tw`
 text-xl
 md:text-2xl
 font-bold
 text-black
 m-1
-`}`
+`}`;
 const Image = styled.div`
 width:auto;
 ${tw`
@@ -29,15 +29,15 @@ img{
     width:auto;
     height:100%
 }
-`
+`;
 
-
-export function Logo(){
-    return (
+export function Logo() {
+  return (
     <LogoContainer>
-       <Image>
+      <Image>
         <img src={carLogoImage} alt="car-logo" />
-       </Image>
-       <LogoText>Get the car</LogoText>
-    </LogoContainer>)
+      </Image>
+      <LogoText>Get the car</LogoText>
+    </LogoContainer>
+  );
 }

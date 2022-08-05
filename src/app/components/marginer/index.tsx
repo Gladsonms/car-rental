@@ -2,26 +2,24 @@ import React from "react";
 import styled from "styled-components";
 
 export interface IMarginerProps {
-margin : number | string;
-direction?: "horizontal" | "vertical"
+  margin : number | string;
+  direction?: "horizontal" | "vertical"
 }
 
 const HorizonatalMargin = styled.span<IMarginerProps>`
 display:flex;
-min-width:${({margin})=>
-typeof margin === "string" ? margin : `${margin}px`};
+min-width:${({ margin }) => (typeof margin === "string" ? margin : `${margin}px`)};
 `;
 
 const VerticalMargin = styled.span<IMarginerProps>`
 display:flex
-min-height:${({margin})=>
-typeof margin === 'string' ? margin : `${margin}px`
+min-height:${({ margin }) => (typeof margin === "string" ? margin : `${margin}px`)
 }
-`
-function Marginer(props:IMarginerProps){
-    const {direction} = props
-    if(direction === "horizontal") return <HorizonatalMargin {...props}/>
-    else return <VerticalMargin {...props} />
+`;
+function Marginer(props:IMarginerProps) {
+  const { direction } = props;
+  if (direction === "horizontal") return <HorizonatalMargin {...props} />;
+  return <VerticalMargin {...props} />;
 }
 
-export {Marginer}
+export { Marginer };

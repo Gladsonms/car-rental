@@ -7,7 +7,7 @@ import BlobImg from "../../../assets/images/blob.svg";
 import { SCREENS } from "../../components/responsive";
 import { Button } from "../../components/button";
 
-const TopSectionContainer=styled.div`
+const TopSectionContainer = styled.div`
 min-height:400px;
 margin-top:6em;
 ${tw`
@@ -19,16 +19,16 @@ pl-3
 pr-3
 lg:pl-12 
 lg:pr-12
-`}`
-const LeftContainer =styled.div`
+`}`;
+const LeftContainer = styled.div`
 ${tw`
 w-1/2
 flex
 flex-col
 `}
-`
+`;
 
-const RightContainer =styled.div`
+const RightContainer = styled.div`
 ${tw`
 w-1/2
 flex
@@ -36,7 +36,7 @@ flex-col
 relative
 mt-20
 `}
-`
+`;
 
 const Slogon = styled.div`
 ${tw`
@@ -53,7 +53,7 @@ sm:leading-snug
 lg:leading-normal
 xl:leading-relaxed
 `}
-`
+`;
 
 const Description = styled.p`
 ${tw`
@@ -65,9 +65,9 @@ overflow-hidden
 max-h-12
 text-gray-800
 `}
-`
+`;
 
-const BlobContainer =styled.div`
+const BlobContainer = styled.div`
 width: 20em;
 height: 10em;
 position: absolute;
@@ -102,7 +102,7 @@ img {
   transform: rotate(-20deg);
 }
 `;
-const StandaloneCar= styled.div`
+const StandaloneCar = styled.div`
 width:auto;
 height:10em;
 right:-6em;
@@ -128,7 +128,7 @@ img{
     right:-13em;
     top-6em;
 }
-`
+`;
 const ButtonContainer = styled.div`
 ${tw`
 flex
@@ -136,29 +136,30 @@ mt-4
 flex-wrap
 `
 }
-`
-export function TopSection(){
-    return <TopSectionContainer>
-    <LeftContainer>
+`;
+export function TopSection() {
+  return (
+    <TopSectionContainer>
+      <LeftContainer>
         <Slogon>
-            Rent the best quality cars with us
+          Rent the best quality cars with us
         </Slogon>
         <Description>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam cupiditate, minus commodi officiis aperiam. Pariatur at sed sapiente, rem magni consectetur nesciunt? Hic voluptatibus nam molestiae, odio culpa quasi.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam cupiditate, minus commodi officiis aperiam. Pariatur at sed sapiente, rem magni consectetur nesciunt? Hic voluptatibus nam molestiae, odio culpa quasi.
         </Description>
         <ButtonContainer>
-        <Button text="Book your Ride"/>
-        <Button theme="filled" text="Sell Your car"/>
+          <Button text="Book your Ride" />
+          <Button theme="filled" text="Sell Your car" />
         </ButtonContainer>
-    </LeftContainer>
-    <RightContainer>
+      </LeftContainer>
+      <RightContainer>
         <BlobContainer>
-            <img src={BlobImg} />
+          <img src={BlobImg} />
         </BlobContainer>
         <StandaloneCar>
-        <img src={MclarenCarImg}/>
+          <img src={MclarenCarImg} />
         </StandaloneCar>
-    </RightContainer>
+      </RightContainer>
     </TopSectionContainer>
-
+  );
 }

@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 import Styled from "styled-components";
-import tw from 'twin.macro';
-import { BookCard } from '../../components/bookCard';
-import { Navbar } from '../../components/Navbar';
-import { TopSection } from './topSection';
+import tw from "twin.macro";
+import { BookCard } from "../../components/bookCard";
+import { Navbar } from "../../components/Navbar";
+import { TopSection } from "./topSection";
 
-export const PageContainer =Styled.div`
+export const PageContainer = Styled.div`
 ${tw`
 flex
 flex-col
@@ -16,10 +16,12 @@ overflow-x-hidden
 `}
 `;
 
-export function HomePage(){
-    return <PageContainer>
-    <Navbar/>
-    <TopSection/>
-    <BookCard />
+export function HomePage() {
+  return (
+    <PageContainer>
+      <Navbar />
+      <TopSection />
+      <BookCard />
     </PageContainer>
+  );
 }
