@@ -6,7 +6,7 @@ import "./App.css";
 import { HomePage } from "./app/containers/HomePage/Index";
 
 const AppContainer = styled.div`
-${tw`
+  ${tw`
 w-full
 h-full
 flex
