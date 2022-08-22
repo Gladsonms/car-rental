@@ -4,6 +4,8 @@ import tw from "twin.macro";
 import BookCard from "../../components/bookCard";
 import { Marginer } from "../../components/marginer";
 import Navbar from "../../components/Navbar";
+import BookingSteps from "./bookingstep";
+
 import TopSection from "./topSection";
 
 export const PageContainer = Styled.div`
@@ -24,6 +26,8 @@ export function HomePage() {
       <TopSection />
       <Marginer direction="vertical" margin="4em" />
       <BookCard />
+      <Marginer direction="vertical" margin="8em" />
+      <BookingSteps />
     </PageContainer>
   );
 }
