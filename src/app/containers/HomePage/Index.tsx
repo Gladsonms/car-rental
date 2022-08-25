@@ -6,6 +6,7 @@ import { Marginer } from "../../components/marginer";
 import Navbar from "../../components/Navbar";
 import AboutUs from "./aboutus";
 import BookingSteps from "./bookingstep";
+import TopCars from "./topCars";
 
 import TopSection from "./topSection";
 
@@ -31,6 +32,8 @@ export function HomePage() {
       <BookingSteps />
       <Marginer direction="vertical" margin="8em" />
       <AboutUs />
+      <Marginer direction="vertical" margin="8em" />
+      <TopCars />
     </PageContainer>
   );
 }
